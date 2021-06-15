@@ -1,7 +1,11 @@
 name: Update gist with latest tweet
 on:
-  schedule:
+ workflow_dispatch:
+ 
+ schedule:
     - cron: '*/10 * * * *'
+   
+ 
 jobs:
   update-gist:
     runs-on: ubuntu-latest
